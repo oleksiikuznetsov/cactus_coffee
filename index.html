@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="css/img/title_icon.png">
+    <title>Cactus Coffe</title>
+</head>
+<body>
+    <header id="home">
+        <nav class="navbar navbar-expand-md navbar-dark nav_top">
+            <button class="navbar-toggler nav_button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+            <ul class="navbar-nav nav_menu">
+                
+                <li>
+                    <a class="smooth" href="index.html"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li>
+                    <a class="smooth" href="#menu"><i class="fas fa-mortar-pestle"></i>Menu</a> 
+                </li>
+                <li>
+                    <a class="smooth" href="#blog"><i class="fas fa-comments"></i>Blog</a>
+                        <ul>
+                            <li class="in_media_disable"><a href="#">Coffee</a></li>
+                            <li class="in_media_disable"><a href="#">Tea</a></li>
+                        </ul>
+                </li>
+                <li>
+                    <a class="smooth" href="#contact"><i class="fab fa-mailchimp"></i>Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="home_container">
+            <div>
+                <div class="img_logo wow bounceInLeft">
+                    <img src="css/img/logo.png" alt="">
+                </div> 
+                    <div class="home_text">
+                        <p>
+                            city Lviv, 68 Chornovola str., 22303
+                        </p>
+                        <p>
+                            Open hours: Mn-Fr 11:00-00:00, Sa-Sa 15:00-00:00
+                        </p>
+                        <p>
+                            Call: (555)123-4567
+                        </p>
+                    </div>
+                    <div class="container_button">
+                        <a class="smooth" href="#menu">
+                            <span class="submit_center">menu</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- parallax effect -->
+    
+    <section id="parallax1">
+        <div class="parallax_container">
+            <div class="h_container">
+                <h2>Закоханість у кожного своя. У нас - в каву</h2>
+                <hr class="hr1">
+                <hr class="hr2">
+                <span class="p_container">
+                    <blockquote> "Еспрессо - це життя. Гірчить, але бадьорить.
+Капучино - це закоханість. Спочатку терпко, потім солодко і легко, а насправді - теж саме життя. Але моменти, коли солодко і терпко - найкращі. До речі, завжди можна просто з'їсти пінку і не пити, але це мало кому приходить в голову. Мабуть, справа все-таки у поєднанні.
+Латте ... латте - це мрії, еспрессо, розбавлений молоком надії, і пінка, пам'ятаєте, так? Та сама пінка, яка буває в капучино. Але немає кориці, немає тієї терпкості, яка дозволяє відчути момент.
+Ще є мокко - кава з гарячим шоколадом. Мокко - це меланхолія. Густа і тягуча. Але навіть в мокко є молоко. І солодкість, та, яку не знайдеш в еспрессо, наприклад.
+І ристрето. Ристрето - це смерть. Це коли все життя - одним ковтком. Випиваєш, просиш рахунок і йдеш.
+Зазвичай так." </blockquote>
+                <p>Кавова книга. Макс Фрай</p>
+                </span>
+                <div class="button_blog">
+                    <a class="smooth" href="#blog">
+                        <span class="submit_blog">blog</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+            <!-- section id="menu" -->
+    
+    <section id="menu">
+        <div class="menu_text">
+            <h2>Our menu</h2>
+            <hr class="hr1_menu">
+            <hr class="hr2_menu">
+            <p>Смак кожної кави - неповторний! </p>
+        </div>
+        
+        <!-- menu images coffee -->
+        
+        <div class="menu_container">
+            <div class="menu_images row">
+                                    <!-- espresso -->
+
+                <div class="menu_item col-12 col-sm-12 col-md-6 col-lg-4">
+                    <button type="button" class="button_menu" data-toggle="modal" data-target="#window_modal_espresso">
+                        <img src="css/img/menu_item/espresso.jpeg" alt="espresso">
+                    </button>    
+                    <h2 class="h2_menu">Espresso</h2>
+                    <!-- modal espresso-->     
+                        <div class="modal fade" id="window_modal_espresso" tabindex="-1" role="dialog" aria-labelledby="modal_label_espresso" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="css/img/logo.png" class="logo_in_modal" alt="Cactus">
+                                    <h5 class="modal-title modal_text" id="modal_label_espresso">Cactus Coffee Espresso</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="none_radius" src="css/img/menu_item/espresso.jpeg" alt="Espresso">
+                                    <br>
+                                    <span class="about_coffee">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi doloribus expedita sapiente, alias nisi!
+                                    </span>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    <!-- spioler-->
+                    <div>
+                        <a href="" class="spoiler_links button_blog_modal">More info</a>
+                        <div class="spoiler_body">
+                            <div class="menu_text">
+                                <p>Price: 5$</p>
+                                <p>with milk and other</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end spoiler-->
+                </div>
+
+                                        <!-- latte -->
+
+                <div class="menu_item col-12 col-sm-12 col-md-6 col-lg-4">
+                    <button type="button" class="button_menu" data-toggle="modal" data-target="#window_modal_latte">
+                        <img src="css/img/menu_item/latte.jpg" alt="latte">
+                    </button>    
+                    <h2 class="h2_menu">Latte</h2>
+                    <!-- modal latte -->
+                        <div class="modal fade" id="window_modal_latte" tabindex="-1" role="dialog" aria-labelledby="modal_label_latte" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="css/img/logo.png" class="logo_in_modal" alt="Cactus">
+                                      <h5 class="modal-title modal_text" id="modal_label_latte">Cactus Coffee Latte</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="none_radius" src="css/img/menu_item/latte.jpg" alt="latte">
+                                    <br>
+                                    <span class="about_coffee">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi doloribus expedita sapiente, alias nisi!
+                                    </span>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    <!-- spioler-->
+                    <div>
+                        <a href="" class="spoiler_links button_blog_modal">More info</a>
+                        <div class="spoiler_body">
+                            <div class="menu_text">
+                                <p>Price: 5$</p>
+                                <p>with milk and other</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end spoiler-->
+                </div>
+                                        <!-- cappuccino -->
+
+                <div class="menu_item col-12 col-sm-12 col-md-6 col-lg-4">
+                    <button type="button" class="button_menu" data-toggle="modal" data-target="#window_modal_cappuccino">
+                        <img src="css/img/menu_item/cappuccino.jpg" alt="cappuccino">
+                    </button>
+                    <h2 class="h2_menu">Cappuccino</h2>
+                    <!-- modal cappuccino -->
+                        <div class="modal fade" id="window_modal_cappuccino" tabindex="-1" role="dialog" aria-labelledby="modal_label_cappuccino" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="css/img/logo.png" class="logo_in_modal" alt="Cactus">
+                                        <h5 class="modal-title modal_text" id="modal_label_cappuccino">Cactus Coffee cappuccino</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="none_radius" src="css/img/menu_item/cappuccino.jpg" alt="cappuccino">
+                                    <br>
+                                    <span class="about_coffee">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi doloribus expedita sapiente, alias nisi!
+                                    </span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>               
+                    <!-- spioler-->
+                    <div>
+                        <a href="" class="spoiler_links button_blog_modal">More info</a>
+                        <div class="spoiler_body">
+                            <div class="menu_text">
+                                <p>Price: 5$</p>
+                                <p>with milk and other</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end spoiler-->
+                </div>
+                                        <!-- raff coffee-->
+
+                <div class="menu_item col-12 col-sm-12 col-md-6 col-lg-4">
+                    <button type="button" class="button_menu" data-toggle="modal" data-target="#window_modal_raff">
+                        <img src="css/img/menu_item/raff.jpg" alt="Raff Coffee">
+                    </button>
+                    <h2 class="h2_menu">Raff Coffee</h2>
+                    <!-- modal raff coffee-->
+                        <div class="modal fade" id="window_modal_raff" tabindex="-1" role="dialog" aria-labelledby="modal_label_raff" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="css/img/logo.png" class="logo_in_modal" alt="Cactus">
+                                      <h5 class="modal-title modal_text" id="modal_label_raff">Cactus Coffee raff</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="none_radius" src="css/img/menu_item/raff.jpg" alt="raff">
+                                    <br>
+                                    <span class="about_coffee">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi doloribus expedita sapiente, alias nisi!
+                                    </span>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    <!-- spioler-->
+                    <div>
+                        <a href="" class="spoiler_links button_blog_modal">More info</a>
+                        <div class="spoiler_body">
+                            <div class="menu_text">
+                                <p>Price: 5$</p>
+                                <p>with milk and other</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end spoiler-->
+                </div>
+                                        <!-- americano -->
+                <div class="menu_item col-12 col-sm-12 col-md-6 col-lg-4">
+                    <button type="button" class="button_menu" data-toggle="modal" data-target="#window_modal_americano">
+                        <img src="css/img/menu_item/americano.jpg" alt="Americano">
+                    </button>
+                    <h2 class="h2_menu">Americano</h2>
+                     <!-- modal americano -->   
+                        <div class="modal fade" id="window_modal_americano" tabindex="-1" role="dialog" aria-labelledby="modal_label_americano" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="css/img/logo.png" class="logo_in_modal" alt="Cactus">
+                                      <h5 class="modal-title modal_text" id="modal_label_americano">Cactus Coffee americano</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="none_radius" src="css/img/menu_item/americano.jpg" alt="americano">
+                                    <br>
+                                    <span class="about_coffee">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi doloribus expedita sapiente, alias nisi!
+                                    </span>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                    <!-- spioler-->
+                    <div>
+                        <a href="" class="spoiler_links button_blog_modal">More info</a>
+                        <div class="spoiler_body">
+                            <div class="menu_text">
+                                <p>Price: 5$</p>
+                                <p>with milk and other</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end spoiler-->
+                </div>
+                                        <!-- classic -->
+
+                <div class="menu_item col-12 col-sm-12 col-md-6 col-lg-4">
+                    <button type="button" class="button_menu" data-toggle="modal" data-target="#window_modal_classic">
+                        <img src="css/img/menu_item/classic.jpg" alt="Classic">
+                    </button>
+                    <h2 class="h2_menu">Classic</h2>
+                    <!-- modal classic-->
+                        <div class="modal fade" id="window_modal_classic" tabindex="-1" role="dialog" aria-labelledby="modal_label_classic" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                    <img class="logo_in_modal" src="css/img/logo.png" alt="Cactus">
+                                      <h5 class="modal-title modal_text" id="modal_label_classic">Cactus Coffee classic</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="none_radius" src="css/img/menu_item/classic.jpg" alt="classic">
+                                    <br>
+                                    <span class="about_coffee">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi doloribus expedita sapiente, alias nisi!
+                                    </span>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    <!-- spioler-->
+                    <div>
+                        <a href="" class="spoiler_links button_blog_modal">More info</a>
+                        <div class="spoiler_body">
+                            <div class="menu_text">
+                                <p>Price: 5$</p>
+                                <p>with milk and other</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end spoiler-->
+                </div>
+                
+            </div>
+        </div>  
+    </section>
+    
+            <!-- parallax2 id section -->
+            
+    <section id="parallax2">
+        <div class="container_after_menu">
+            <div class="text_container">
+                <h2>Our coffee is with Love</h2>
+                    <hr class="hr1_parallax2">
+                    <hr class="hr2_parallax2">
+                <span class="parallax2_about_coffee">
+                    Всім відомо, що кожен ковток кави - це поєднання насолоди і бадьорості. Невпинне бажання відчути цей
+                    смак знову і знову змушує Вас постійно готувати, купувати цей напій і насолоджуватися ним постійно! Через це, 
+                    ми обрали найкращі сорти кави, поєднали їх у бленді для максимально вираженого смаку і готові дарувати
+                    Вам насолоду кожного дня!
+                </span>
+                <br><br>
+                <span class="about_coffee wow_cup">Завітай на каву</span>
+            </div>
+        </div> 
+    </section>        
+    
+            <!-- section id="blog" -->
+            
+    <section id="blog" class="row">
+        <div class="blog_container">
+            <h2>Our blog</h2>
+                <hr class="hr1_blog">
+                <hr class="hr2_blog">
+            <span class="about_coffee">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus consequuntur ratione minus officia unde!
+            </span>
+            <br>
+        </div>
+            
+                <!-- 1 img -->
+
+        <div class="blog_posts col-12 col-sm-12 col-md-6 col-lg-4">
+            <h2 class="h2_blog">Coffee cappuccino how must be</h2>
+            <hr class="hr_blog_img">
+            <img class="blog_img" src="css/img/blog_img/blog1.jpg" alt="">
+            <hr class="hr_blog_img">    
+                <div class="content_blog">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ut veniam ipsum tenetur consequuntur commodi.
+                    </p>
+                    <a class="button_blog_modal" href="blog.html">Read more in blog</a>
+                </div>    
+        </div>
+        
+                <!-- 2 img -->
+
+        <div class="blog_posts col-12 col-sm-12 col-md-6 col-lg-4">
+            <h2 class="h2_blog">Coffee cappuccino how must be</h2>
+            <hr class="hr_blog_img">
+            <img class="blog_img" src="css/img/blog_img/blog2.jpg" alt="">
+            <hr class="hr_blog_img">    
+            <div class="content_blog">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ut veniam ipsum tenetur consequuntur commodi.
+                </p>
+                <a class="button_blog_modal" href="blog.html">Read more in blog</a>
+            </div>    
+        </div>
+        
+                <!-- 3 img -->
+
+        <div class="blog_posts col-12 col-sm-12 col-md-6 col-lg-4">
+            <h2 class="h2_blog">Coffee cappuccino how must be</h2>
+            <hr class="hr_blog_img">
+            <img class="blog_img" src="css/img/blog_img/blog3.jpg" alt="">
+            <hr class="hr_blog_img">
+            <div class="content_blog">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ut veniam ipsum tenetur consequuntur commodi.
+                </p>
+                <a class="button_blog_modal" href="blog.html">Read more in blog</a>
+            </div>    
+        </div>
+        
+                <!-- 4 img -->
+
+        <div class="blog_posts col-12 col-sm-12 col-md-6 col-lg-4">
+            <h2 class="h2_blog">Coffee cappuccino how must be</h2>
+            <hr class="hr_blog_img">
+            <img class="blog_img" src="css/img/blog_img/blog4.jpg" alt="">
+            <hr class="hr_blog_img">
+            <div class="content_blog">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ut veniam ipsum tenetur consequuntur commodi.
+                </p>
+                <a class="button_blog_modal" href="blog.html">Read more in blog</a>
+            </div>    
+        </div>
+    
+                <!-- 5 img -->
+
+        <div class="blog_posts col-12 col-sm-12 col-md-6 col-lg-4">
+            <h2 class="h2_blog">Coffee cappuccino how must be</h2>
+            <hr class="hr_blog_img">
+            <img class="blog_img" src="css/img/blog_img/blog5.jpg" alt="">
+            <hr class="hr_blog_img">
+            <div class="content_blog">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ut veniam ipsum tenetur consequuntur commodi.
+                </p>
+                <a class="button_blog_modal" href="blog.html">Read more in blog</a>
+            </div>    
+        </div>
+
+                <!-- 6 img -->
+        
+        <div class="blog_posts col-12 col-sm-12 col-md-6 col-lg-4">
+            <h2 class="h2_blog">Coffee cappuccino how must be</h2>
+            <hr class="hr_blog_img">
+            <img class="blog_img" src="css/img/blog_img/blog6.jpg" alt="">
+            <hr class="hr_blog_img">
+            <div class="content_blog">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ut veniam ipsum tenetur consequuntur commodi.
+                </p>
+                    <a class="button_blog_modal" href="blog.html">Read more in blog</a>
+            </div>    
+        </div>
+        
+   
+        
+    </section>
+    
+            <!-- section id="contact" -->
+    
+    <section id="contact">
+        <div class="line">
+            <hr class="left_hr">
+            <img class="heart" src="css/img/line.jpg" width="100" height="100" alt="">
+            <hr class="right_hr">
+        </div>
+        <div class="contact_container">
+            <div class="map_section">
+                <div class="contact_header">
+                    <h3>Find us in the map</h3>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, praesentium.
+                    </span>
+                </div>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1218.5740952624303!2d24.019559098075327!3d49.858530349303436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add2be8fc6ed7%3A0x49182519051a1e11!2sKaktus!5e0!3m2!1sru!2sua!4v1544033835826" width="450" height="350" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="form_section">
+                <div class="contact_header">
+                    <h3>Sand us a wishing's</h3>
+                    <span class="about_coffee">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, architecto.
+                    </span>
+                </div>
+                <form class="contact_form" method="POST" action="https://formspree.io/cactuskavalviv@gmail.com">
+                    <label class="label_text">
+                        Your name:<input type="text" name="client_name" placeholder="Write your name" required>
+                    </label>  
+                    <br>
+                    <label class="label_text">
+                        Your email:<input type="email" name="client_email" placeholder="Write your email" required>
+                    </label>
+                    <br>
+                    <label class="label_text">
+                        Your wish:
+                        <br>
+                        <textarea type="textarea" name="your_wish" row="2" cols="30" placeholder="Write your wish"></textarea>
+                    </label>
+                    <br>
+                    <input class="button_blog_modal middle" type="submit">
+                    <br>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_logo">
+                <img src="css/img/logo.png" width="150" height="150" alt="cactus"> 
+            </div>
+            <div class="footer_links_top">
+                <h4>Link</h4>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Menu</a></p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Contact</a></p>
+            </div>
+            <div class="footer_contact">
+                <h4>Contact</h4>
+                <p>address: <a href="#">Львів, пр. Чорновола, 63</a></p>
+                <p>email: <a href="#">cactuskavalviv@gmail.com</a></p>
+                <p>call us: <a href="#">+38(067)67-67-677</a></p>
+            </div>
+        </div>
+        <div class="footer_container_low">
+            <div class="developer">
+                <p>Developed by b.b. studio</p>
+            </div>
+            <div class="social_icon">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-google-plus-square"></i>
+                <i class="fab fa-500px"></i>
+            </div>
+        </div> 
+    </footer>
+   
+          
+ 
+ 
+ 
+ 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

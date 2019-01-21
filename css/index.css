@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Cormorant+Upright|Dancing+Script|Inconsolata|Rokkitt|Open+Sans|Source+Serif+Pro');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 1350px;
+    margin: auto;
+    overflow-x: hidden;
+}
+.button_menu:focus {
+    outline: none !important;
+}
+#home {
+    width: 100%;
+    height: 100vh;
+    min-height: 820px;
+    background-image: url(img/home.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#home .nav_top {
+    display: flex;
+    justify-content: flex-end;
+}
+#home .nav_menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+#home .nav_menu li {
+    display: inline-block;
+    margin-top: 60px;
+    border-right: 1px solid gray;
+    text-align: center;
+}
+#home .nav_menu li a {
+    margin: 25px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Rokkitt', serif;
+    transition: all .3s ease;
+}
+#home .nav_menu .fas, .fab {
+    padding: 0 10px 0 10px;
+}
+#home .nav_menu > li:first-child {
+    border-left: 1px solid gray;
+}
+#home .nav_menu > li li:first-child {
+    border: none;
+}
+#home .nav_menu li:hover {
+    box-shadow: 3px 5px 12px -5px #13d110;
+    transition: all .3s ease;
+    opacity: .9;
+}
+        /* M E D I A */
+
+@media (max-width: 767px) {
+    #home .nav_menu > li:first-child {
+        border: none;
+    }
+    #home .nav_menu li {
+        border: none;
+        margin-top: 30px;
+    }
+}
+        /* sub menu*/
+#home .nav_menu li ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    margin: auto;
+}
+#home .nav_menu li > ul li {
+    display: block;
+    border: none;
+    text-align: left;
+    margin: 15px 0 15px 0;
+}
+#home .nav_menu li:hover > ul {
+    display: block;
+}
+        /* M E D I A in 767 display none to sub menu */
+@media (max-width: 767px) {
+    #home .nav_menu li > ul .in_media_disable {
+        display: none;
+}
+}   
+#home .nav_menu li:hover > ul {
+    display: block;
+}
+
+        /* end style nav_ menu */
+
+#home .home_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+#home .home_container .img_logo {
+    display: flex;
+    justify-content: center;
+}
+
+        /* M E D I A */
+@media (max-width: 350px){
+    #home .home_container .img_logo img {
+        width: 70%;
+        height: 70%;
+    }
+}     
+        
+#home .home_container .home_text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 1.6rem;
+    text-align: center;
+    margin-top: 25px;
+}
+#home .container_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+        /* section parallax1 */
+    
+#parallax1 {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('img/parallax_fon1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#parallax1 .parallax_container {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    opacity: 0.9;
+    background-image: url('img/parallax1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 600px;
+}
+#parallax1 .h_container {
+    position: absolute;
+    top: 10%;
+    margin-left: 5%;
+    font-family: 'ABeeZee', sans-serif;
+    text-align: left;
+}
+.hr1 {
+    margin-top: 3%;
+    border: 2px solid #000;
+    width: 13%;
+    margin-bottom: 1px;
+}
+.hr2 {
+    color: #000;
+    width: 13.4%;
+    margin-bottom: 3%;
+    margin-top: 5px;
+}
+#parallax1 .h_container .p_container {
+    display: block;
+    width: 70%;
+    margin: 0;
+    font-family: 'Open Sans', cursive;
+    color: black;
+    font-size: 1.1rem;
+    letter-spacing: normal;
+    margin-left: 15px;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+#parallax1 .h_container .p_container p {
+    text-align: right;
+}
+#parallax1 .button_blog {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3%;
+    margin-left: 15px;
+    letter-spacing: 0.8rem;
+}
+
+    /* M E D I A for section id="parallax1" */
+
+@media (min-width: 946px) {
+   #parallax1 .parallax_container {
+        background-position: 85%;
+    } 
+}
+@media (max-width: 945px) {
+    #parallax1 .parallax_container {
+        background-position: 80%;
+    }
+    #parallax1 .h_container {
+        top: 3%;
+    }
+    #parallax1 .h_container .p_container {
+        font-size: 16px;
+        line-height: 1.5rem;
+        width: 80%;
+    }
+}
+@media (max-width: 576px) {
+    #parallax1 .h_container h2 {
+        font-size: 1.3rem;
+    }
+    #parallax1 .h_container .p_container {
+        font-size: 12px;
+        line-height: 1.3rem;
+        width: 85%;
+    }
+    #parallax1 .h_container .p_container p {
+        margin-bottom: 0;
+    }
+}
+    
+
+        /* section id="menu" */
+        
+#menu {
+    width: 100%;
+    background-color: #fff;
+}
+#menu .menu_text {
+    text-align: center;
+    margin-top: 5%;
+    color: #000;
+    font-family: 'AbeeZee', cursive;
+    font-size: 1.7rem;
+}
+#menu h2{
+    font-family: 'Rokkitt', sans-serif;
+    font-size: 3.1rem;
+    margin-bottom: 10px;
+}
+#menu .hr1_menu {
+    width: 13%;
+    margin: auto;
+    border: 2px solid #000;
+}
+#menu .hr2_menu {
+    width: 13.1%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+        /* style menu section */ 
+
+.menu_images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 2% 0;
+}
+        /* M E D I A */
+@media (max-width: 374px) {
+    .menu_item img {
+        width: 283px;
+        height: 283px;
+    }
+}        
+
+.menu_item {
+    margin: 25px 0;
+}
+.button_menu {
+    border-radius: 100%;   
+}
+.menu_item img {
+    border-radius: 100%;
+    opacity: .9;
+}
+.menu_item .none_radius {
+    border-radius: inherit;
+    opacity: 1;
+}
+.button_menu:hover {
+    cursor: pointer;
+    background-color: gray;
+    padding: 0.1px;
+    box-shadow: 2px 1px 1px 1px #423930;
+}
+.menu_item .h2_menu {
+    font-family: 'Rokkitt', cursive;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.spoiler_body {
+    display: none;
+}
+.spoiler_links {
+    cursor: pointer;
+}
+        /* styling logo.svg in modal */
+
+.modal-header .logo_in_modal {
+    width: 30%;
+    height: 30%;
+    margin: auto;
+}
+.modal_text {
+    margin: auto;
+}    
+
+        /* section id="after_menu" */
+        
+#parallax2 {
+    height: 100%;
+    overflow-x: hidden;
+    background-image: url('img/parallax2_fon.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}    
+#parallax2 .container_after_menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url('img/parallax2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 600px;
+    text-align: center;
+    opacity: .9;
+}
+#parallax2 .text_container {
+    position: absolute;
+    top: 15%;
+    margin: 0 3% 0 3%;
+    color: #000;
+}
+.text_container h2 {
+    text-align: center;
+    font-family: 'Rokkitt', cursive;
+    font-size: 2.7rem;
+}
+.paralalx2 .parallax2_about_coffee {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.1rem;
+    line-height: 2.9rem;
+}
+#parallax2 .hr1_parallax2 {
+    width: 13%;
+    margin: auto;
+    border: 2px solid #000;
+    margin-top: 20px;
+}
+#parallax2 .hr2_parallax2 {
+    width: 13.1%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5%;
+}
+     /* M E D I A for section id="parallax2" */
+
+@media (min-width: 946px) {
+   #parallax2 .container_after_menu {
+        background-position: center;
+    } 
+}
+@media (max-width: 945px) {
+    #parallax2 .container_after_menu {
+        background-position: 1%;
+    }
+    #parallax2 .parallax2_about_coffee {
+        top: 10%;
+        font-size: 16px;
+        line-height: 1.5rem;
+        width: 80%;
+    }
+}
+@media (max-width: 576px) {
+    #parallax2 .container_after_menu {
+        background-position: left;
+    }
+    #parallax2 .parallax2_about_coffee {
+        font-size: 12px;
+        line-height: 1.7rem;
+        width: 85%;
+    }
+    #parallax1 .parallax2_about_coffee {
+        margin-bottom: 15px;
+    }
+}    
+
+        /* section id="blog" styling */
+        
+#blog {
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}        
+#blog .blog_container {
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #000;
+}
+
+#blog .blog_container h2 {
+    font-family: 'Rokkitt', sans-serif;
+    font-size: 2.7rem;
+}
+#blog .hr1_blog {
+    width: 13%;
+    margin: auto;
+    border: 2px solid #000;
+}
+#blog .hr2_blog {
+    width: 13.1%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5%;
+}
+#blog .blog_container .about_coffee {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.1rem;
+    margin-top: 10px;
+    margin: 0 3% 0 3%;
+}
+#blog .blog_posts {
+    text-align: center;
+}
+#blog .blog_posts .h2_blog {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2rem;
+    margin: 20px 10px 10px 10px;
+}
+#blog .blog_posts .hr_blog_img {
+    width: auto;
+    color: #000;
+    margin: 20px 46px 20px 46px;
+    height: 2px;
+}
+#blog .blog_posts .content_blog {
+    font-family: 'Source Serif Pro', serif;
+    margin: 0 46px;
+    text-align: justify;
+}
+#blog .blog_img {
+    opacity: .9;
+    width: 283px;
+    height: 283px;
+    transition: transform .5s;
+}
+#blog .blog_img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+        /* section id="contact" */
+#contact .line {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}        
+#contact .line .left_hr {
+    width: 30%;
+    margin: auto;
+    border: 2px solid #423930; 
+    border-radius: 25%;
+    
+}
+#contact .line .right_hr {
+    width: 30%;
+    margin: auto;
+    border: 2px solid #423930; 
+    border-radius: 25%;
+}
+#contact .contact_container {
+    display: flex;
+    justify-content: space-around;
+}
+#contact .contact_header {
+    text-align: center;
+    font-family: 'AbeeZee', sans-serif, cursive;
+    font-size: 1.6rem;
+}
+#contact .map_section, .form_section {
+    margin: 2% 2%;
+}
+#contact .map {
+    width: 100%;
+    margin: 2% auto;
+    border: 1px solid #423930;
+    padding: 5px;
+    box-shadow:
+    3px 3px 0 0 gray,
+    3px 3px 0 0 gray,
+    3px 3px 0 0 gray;
+}
+#contact .contact_form {
+    width: 100%;
+    height: 350px;
+    margin: 2% 2%;
+    background-color: #f0eedb;
+    border: 1px solid #423930;
+    padding: 5px;
+    box-shadow:
+    3px 3px 0 0 gray,
+    3px 3px 0 0 gray,
+    3px 3px 0 0 gray;
+}
+#contact .label_text {
+    font-family: 'Dancing Script', cursive, sans-serif;
+    margin-top: 4%;
+    padding: 5px 20px;
+    letter-spacing: 5px;
+    background-color: gainsboro;
+    width: 100%;
+    text-align: center;
+}
+#contact .label_text input {
+    text-align: center;
+    padding: 5px 35px;
+    background-color: antiquewhite;
+}
+#contact .label_text textarea {
+    text-align: center;
+    padding: 5px 5px;
+    background-color: antiquewhite;
+}
+#contact .contact_form .middle {
+    margin-left: 38%;
+}
+
+        /* M E D I A for id="contact" */
+        
+@media (max-width: 1105px) {
+    #contact .contact_container {
+        display: block;
+    }
+    #contact .contact_form {
+        width: 70%;
+        height: 370px;
+        margin: 2% auto;
+    }
+}
+@media (max-width: 676px) {
+    #contact .contact_form {
+        width: 90%;
+        margin: 2% auto;
+    }
+}
+
+        /* styling footer */
+footer {
+    height: 100%;
+    background-image: url('img/footer_fon.jpg');
+    background-size: cover;
+    background-position: center;
+}
+footer .footer_container {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 5px 15px 5px;
+    color: gold;
+}
+footer .footer_container p, a {
+    color: #fff;
+    font-family: 'Rokkitt', sans-serif;
+    font-size: medium;
+    margin-bottom: .5rem;
+}
+footer .footer_container p {
+    color: gold;
+}
+
+footer  .footer_container a:hover{
+   color:  gold;
+   border-bottom: 1px solid  gold;
+}
+footer .footer_container_low {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px 10px 15px;
+    color: gray;
+}
+footer .footer_container_low .developer {
+    font-family: 'Rokkitt', sans-serif;
+    font-size: small;
+    margin-top: auto;
+}
+footer .footer_container_low .social_icon {
+    font-size: 2.1rem;
+    color: gold;
+    margin-right: 30%;
+}
+
+        /* M E D I A footer */
+    
+@media (max-width: 516px) {
+    .footer_container a {
+        display: grid;
+    }
+}
